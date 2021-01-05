@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test TestNG XML Suite" verbose="2">
+	<!-- parallel="methods" thread-count="2" -->
+	<listeners>
+		<listener class-name="InterviewQuestions.Transformer">
+		</listener>
+	</listeners>
+	<parameter name="Tester" value="Automation Tester" />
+	<parameter name="Tool" value="Selenium" />
+	<test name="Test TestNG XML Test">
+		<!-- <groups> <run> <include name="Nokia"></include> <include name="OnePlus"></include> 
+			<exclude name=""></exclude> </run> </groups> -->
+		<!-- <parameter name="Name" value="Naveen" /> -->
+		<classes>
+			<class name="InterviewQuestions.RetryFailedTestCases">
+			</class>
+		</classes>
+	</test>
+</suite>
+
+<!-- <class name="testNG_Examples.PriorityExample"> </class> <class name="testNG_Examples.SkipTestCaseExample"> 
+	</class> <class name="testNG_Examples.SuitExample"> </class> -->
