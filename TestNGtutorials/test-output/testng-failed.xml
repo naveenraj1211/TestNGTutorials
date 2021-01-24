@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="InterviewQuestions.AlwaysRunExample">
+      <class name="InterviewQuestions.RetryFailedTestCases">
         <methods>
-          <include name="parentsPermission"/>
+          <include name="testCase2"/>
+          <include name="testCase1"/>
         </methods>
-      </class> <!-- InterviewQuestions.AlwaysRunExample -->
+      </class> <!-- InterviewQuestions.RetryFailedTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

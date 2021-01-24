@@ -12,7 +12,7 @@ public class PriorityExample
 		System.out.println("Engine started");
 	}
 	
-	@Test (priority=2)
+	@Test (priority=-2)
 	public void putFirstGear(){
 		System.out.println("Car is in first Gear");
 	}
@@ -22,7 +22,7 @@ public class PriorityExample
 		System.out.println("Car is in second Gear");
 	}
 	
-	@Test (priority=4)
+	@Test (priority=0)
 	public void putThirdGear(){
 		System.out.println("Car is in third Gear");
 	}

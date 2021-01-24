@@ -9,9 +9,14 @@
 	<parameter name="Tester" value="Automation Tester" />
 	<parameter name="Tool" value="Selenium" />
 	<test name="Test TestNG XML Test">
-		<!-- <groups> <run> <include name="Nokia"></include> <include name="OnePlus"></include> 
-			<exclude name=""></exclude> </run> </groups> -->
-		<!-- <parameter name="Name" value="Naveen" /> -->
+		<groups>
+			<run>
+				<include name="Nokia"></include>
+				<include name="OnePlus"></include>
+				<exclude name=""></exclude>
+			</run>
+		</groups>
+		<parameter name="Name" value="Naveen" />
 		<classes>
 			<class name="InterviewQuestions.RetryFailedTestCases">
 			</class>
